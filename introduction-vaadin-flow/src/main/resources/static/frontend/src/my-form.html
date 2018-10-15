@@ -1,0 +1,30 @@
+<!--<link rel="import" href="../bower_components/polymer/polymer-element.html">-->
+<!--<link rel="import" href="../bower_components/vaadin-text-field/src/vaadin-text-field.html">-->
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="form-buttons-bar.html">
+
+<dom-module id="my-form">
+    <template>
+
+        <vaadin-vertical-layout>
+            <vaadin-text-field id="name"></vaadin-text-field>
+            <vaadin-text-field id="email"></vaadin-text-field>
+            <vaadin-button id="submit">Submit</vaadin-button>
+
+            <form-buttons-bar id="buttons">gggg</form-buttons-bar>
+
+        </vaadin-vertical-layout>
+
+    </template>
+
+    <script>
+        class MyForm extends Polymer.Element{
+            static get is(){
+                return 'my-form'
+            }
+        }
+
+        customElements.define(MyForm.is, MyForm);
+    </script>
+
+</dom-module>
